@@ -1,0 +1,12 @@
+Package: autocpx
+Title: Automatic Complexity of Strings
+Version: 0.0.0.9000
+Authors@R: person("Kaui", "Yogi", email = "k10dayogi@gmail.com", role = c("aut","cre"))
+Description: Runs various simulations for automatic complexity.
+Depends:
+    R (>= 3.2.3)
+License: What license is it under?
+Encoding: UTF-8
+Imports: repmis,bit64
+LazyData: true
+RoxygenNote: 5.0.1.9000
