@@ -17,7 +17,7 @@ path<-function(n=1,file=FALSE,start=1){
   if (file==TRUE & dir.exists("./autoplot")==FALSE){
     dx<<-getwd();dir.create("./autoplot"); setwd("./autoplot")
   }
-    suppressMessages(autocpx:::dat(offline))
+    suppressMessages(autocpx:::dat())
 
   for(j in 1:n){                 #this for loop cycles over the number of simulations.
     z.0<<-vector("character",15)

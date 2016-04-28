@@ -68,7 +68,7 @@ nxt<-function(x){
 #' v()
 v<-function(k,n=1){
   offline<<-FALSE
-  dat(offline)
+  suppressMessages(autocpx:::dat())
   if(k>15){stop("k must be no more than 15!")}
   if (k<=0) {stop("Values of k must be positive integers.")}
   if (as.integer(k)!=k){stop("Values of k must be positive integers!")}
