@@ -4,15 +4,13 @@
 \alias{gen}
 \title{Deficiency lookup function.}
 \usage{
-gen(n, q = 1, offline = FALSE)
+gen(n, q = 1)
 }
 \arguments{
 \item{n}{length of string to generate.}
 
-\item{offline}{Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
+\item{k}{number of bits to "look ahead."
 gen()}
-
-\item{k}{number of bits to "look ahead."}
 }
 \description{
 This function generates strings randomly, generates the "look-aheads" and pulls in deficiency data.

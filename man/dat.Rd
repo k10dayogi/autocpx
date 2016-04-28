@@ -4,13 +4,10 @@
 \alias{dat}
 \title{Data retreival function}
 \usage{
-dat(offline = FALSE)
-}
-\arguments{
-\item{offline}{Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
-v()}
+dat()
 }
 \description{
 This function automatically loads data and applies appropriate transformations.
+v()
 }
 

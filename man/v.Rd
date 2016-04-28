@@ -4,14 +4,12 @@
 \alias{v}
 \title{Name-generating function.}
 \usage{
-v(k, n = 1, offline = FALSE)
+v(k, n = 1)
 }
 \arguments{
 \item{k}{Number of bits you want to "look ahead."}
 
-\item{n}{Length of the string (number of iterations.)}
-
-\item{offline}{Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
+\item{n}{Length of the string (number of iterations.)
 v()}
 }
 \description{

@@ -12,9 +12,9 @@
 #' Data retreival function
 #'
 #' This function automatically loads data and applies appropriate transformations.
-#' @param offline Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
 #' v()
-dat<-function(offline=FALSE){
+dat<-function(){
+  offline<<-FALSE
   if(offline==FALSE){
   require(bit64)
   data.long<<-repmis:::source_data("https://dl.dropboxusercontent.com/u/13235684/MasterThesis(7)%20r%3D.25%20n%3D16%20with%20discounted%20values.csv",sep=",",cache=TRUE)
@@ -65,9 +65,9 @@ nxt<-function(x){
 #' This function allows you to generate names of vectors systematically.
 #' @param k Number of bits you want to "look ahead."
 #' @param n Length of the string (number of iterations.)
-#' @param offline Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
 #' v()
-v<-function(k,n=1,offline=FALSE){
+v<-function(k,n=1){
+  offline<<-FALSE
   dat(offline)
   if(k>15){stop("k must be no more than 15!")}
   if (k<=0) {stop("Values of k must be positive integers.")}
@@ -91,10 +91,10 @@ v<-function(k,n=1,offline=FALSE){
 #' This function generates strings randomly, generates the "look-aheads" and pulls in deficiency data.
 #' @param n length of string to generate.
 #' @param k number of bits to "look ahead."
-#' @param offline Default FALSE. If the file is being obtained locally, then use offline=TRUE to speed loading.
 #' gen()
 #' @export
-gen<-function(n,q=1,offline=FALSE){
+gen<-function(n,q=1){
+  offline<<-FALSE
   #List of error conditions
   if (q<=0) {stop("Values of q must be positive integers.")}
   if (as.integer(q)!=q){stop("Values of q must be integers!")}
