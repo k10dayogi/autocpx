@@ -34,7 +34,7 @@ path<-function(n=1,file=FALSE,start=1){
     db[,2]<<-as.numeric(as.character(db[,2]))
     print(db)
   #plot commands here.
-    p<<-ggplot2::qplot(1:16,db[,2])+ggplot2::geom_line()
+    p<<-ggplot2::qplot(1:16,db[,2])+ggplot2::geom_line()+ggplot2::ylim(c(0,4))
     print(p)
       if(file==TRUE){
           for(i in (start):(start+n-1)){
