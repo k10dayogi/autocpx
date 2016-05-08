@@ -4,7 +4,7 @@
 #' when working locally.
 #' @export
 wd<-function(){
-  setwd("C:/Users/Kaui Yogi/Dropbox/SCHOOL/2015-2016 Spring Stuff/MATH 699")
+  setwd("C:/Users/Kaui Yogi/Dropbox/RESEARCH/MA Research")
 }
 #' Set working dir [Mac]
 #'
@@ -12,7 +12,7 @@ wd<-function(){
 #' when working locally.
 #' @export
 wd.mac<-function(){
-  setwd("~/Dropbox/SCHOOL/2015-2016 Spring Stuff/MATH 699")
+  setwd("~/Dropbox/RESEARCH/MA Research")
 }
 #' Set working dir as autocpx subdir
 #'
