@@ -37,4 +37,5 @@ cprb<-function(cache.value=TRUE){
   tab<<-as.data.frame(cbind(formatC(tab[,1],digits=2,format="f"),formatC(tab[,2],digits=2,format="f"),
                             formatC(tab[,3],digits=2,format="f")))
   names(tab)<<-c("P(Dec)","P(Con)","P(Inc)");row.names(tab)<<-0:7
+  print(tab)
 }
