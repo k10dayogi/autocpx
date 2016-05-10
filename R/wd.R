@@ -1,18 +1,13 @@
-#' Set working dir [PC]
+#' Set working dir
 #'
-#' This function allows you to go straight to the appropriate working directory [for PC] 
+#' This function allows you to go straight to the appropriate working directory
 #' when working locally.
+#' @param OS Default pc. If on the Mac, use \code{mac} as the argument.
 #' @export
-wd<-function(){
-  setwd("C:/Users/Kaui Yogi/Dropbox/RESEARCH/MA Research")
-}
-#' Set working dir [Mac]
-#'
-#' This function allows you to go straight to the appropriate working directory [for Mac] 
-#' when working locally.
-#' @export
-wd.mac<-function(){
-  setwd("~/Dropbox/RESEARCH/MA Research")
+wd<-function(OS="pc"){
+  if(OS!="pc"&OS!="mac"){stop("Invalid OS.")}
+  if(OS=="pc"){setwd("C:/Users/Kaui Yogi/Dropbox/RESEARCH/MA Research")}
+  if(OS=="mac"){setwd("~/Dropbox/RESEARCH/MA Research")}
 }
 #' Set working dir as autocpx subdir
 #'
@@ -38,4 +33,13 @@ upd<-function(OS="pc"){
   if(OS!="pc"&OS!="mac"){stop("Invalid OS.")}
   if(OS=="pc"){wd();autowd();devtools:::document();wd();devtools:::install("autocpx")}
   if(OS=="mac"){wd.mac();autowd();devtools:::document();wd.mac();devtools:::install("autocpx")}
+}
+#' Public WD
+#'
+#' This function sets WD to the "public" directory.
+#' @param OS Enter "pc" if PC and "mac" if mac.
+#' @export
+pubwd<-function(OS="pc"){
+  if(OS=="pc"){setwd("C:/Users/Kaui Yogi/Dropbox/Public")}
+  if(OS=="mac"){setwd("~/Dropbox/Public")}
 }

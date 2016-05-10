@@ -2,7 +2,7 @@
 % Please edit documentation in R/conditional prb.R
 \name{cprb}
 \alias{cprb}
-\title{Import probability table.}
+\title{Conditional probability table}
 \usage{
 cprb(cache.value = TRUE)
 }
@@ -10,12 +10,12 @@ cprb(cache.value = TRUE)
 \item{cache.value}{Default TRUE. If you want to pull off of the web again, set to FALSE.}
 }
 \value{
-The name of the data frame generated is \code{prb}. Once the function has completed execution,
-the element is available for use.
+Returns two data frames: One is \code{prb} which is the full table of strings, deficiencies, and movement factors.
+The other is \code{tab} which shows probabilities of increase and decrease at various levels.
 }
 \description{
-This function allows the user to pull the table of conditional probabilities into R and perform 
-tranformations necessary for further analysis.
+This function allows the user to pull the table of conditional probabilities into R and 
+allows the user to work with the data and see the conditional probability table.
 }
 \details{
 The table that is pulled in comes from an online source. Caching is available by default
