@@ -10,8 +10,9 @@ cprb(cache.value = TRUE)
 \item{cache.value}{Default TRUE. If you want to pull off of the web again, set to FALSE.}
 }
 \value{
-Returns two data frames: One is \code{prb} which is the full table of strings, deficiencies, and movement factors.
-The other is \code{tab} which shows probabilities of increase and decrease at various levels.
+Returns three data frames: One is \code{prb} which is the full table of strings, deficiencies, and movement factors.
+One is \code{tcpx} which shows probabilities of increase and decrease at various complexity levels. The final is \code{tlen} which shows
+probabilties of increase and decrease at various string lengths.
 }
 \description{
 This function allows the user to pull the table of conditional probabilities into R and 
