@@ -75,7 +75,7 @@ cprb<-function(cache.value=TRUE){
   tab.2<-as.data.frame(rbind(td.0,td.1,td.2,td.3,td.4,td.5,td.6,td.7,td.8,td.9,td.10,td.11,td.12,td.13,td.14))
   tab.2<-as.data.frame(cbind(0:14,formatC(tab.2[,1],digits=2,format="f"),formatC(tab.2[,2],digits=2,format="f"),
                               formatC(tab.2[,3],digits=2,format="f")))
-  names(tab.2)<-c("Length","P(Dec)","P(Con)","P(Inc)")
+  names(tab.2)<-c("Len","P(Dec)","P(Con)","P(Inc)")
   tlen<<-tab.2
   print(tlen,row.names = FALSE)
 }
