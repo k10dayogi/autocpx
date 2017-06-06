@@ -12,7 +12,6 @@ To install the `autocpx` package, use the command
 ```markdown
 devtools::install_github('k10dayogi/autocpx')
 ```
-You can use the [editor on GitHub](https://github.com/k10dayogi/autocpx/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 ### Support or Contact
 
